@@ -1,0 +1,39 @@
+﻿@model ResultViewModel
+
+<div class="resultado">
+	<img src="~/img/Sorvil2.png" />
+</div>
+<div class="navegador-perfil">
+	<ul class="nav justify-content-center">
+		<li class="nav-item">
+			<a class="nav-link active" aria-current="page" asp-area="" asp-controller="BookSearch" asp-action="Index">Search</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" asp-area="" asp-controller="BookSearch" asp-action="Perfil">Home</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" asp-area="Identity" asp-page="/Account/Logout">Logout</a>
+		</li>
+	</ul>
+</div>
+<div class="container-resultados">
+	@if (Model.Books != null && Model.Books.Any())
+	{
+		<div class="book-cards">
+			@foreach (var book in Model.Books)
+			{
+				<div class="book-card">
+					<img src="@book.ImageUrl" alt="Capa do livro" />
+					<h3>@book.Title</h3>
+					<p>@book.Author</p>
+					<p>@book.PublishedYear</p>
+					<a href="@Url.Action("Details", "BookSearch", book)">Detalhes</a>
+				</div>
+			}
+		</div>
+	}
+	else
+	{
+		<p>Nenhum livro encontrado.</p>
+	}
+</div>

@@ -1,0 +1,70 @@
+﻿@model Perfil
+<div class="perfil-logotipo">
+    <img src="~/img/Sorvil2.png" alt="img-avatar" />
+</div>
+<div class="navegador-perfil">
+	<ul class="nav justify-content-center">
+		<li class="nav-item">
+			<a class="nav-link active" aria-current="page" asp-area="" asp-controller="BookSearch" asp-action="Index">Search</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" asp-area="" asp-controller="BookSearch" asp-action="Perfil">Home</a>
+		</li>
+        <li class="nav-item">
+            <a class="nav-link" asp-area="Identity" asp-page="/Account/Logout">Logout</a>
+        </li>
+        </ul>
+</div>
+<section class="seccion-perfil-usuario">
+    <div class="perfil-usuario-header">
+   <div class="perfil-usuario-portada">
+	<div class="perfil-usuario-avatar">
+	<img src="~/img/avatar.jpg" alt="img-avatar" />
+    <button type="button" class="botao-avatar">
+        <i class="icone-imagem"></i>
+    </button>
+	</div>
+   </div>
+	</div>   
+	<div class="perfil-usuario-body">
+		<div class="perfil-usuario-bio">
+			<h3 class="titulo">Bruna Soares</h3>
+			<p class="texto"> Leitura, antes de mais nada é estímulo, é exemplo. (Ruth Rocha)</p>
+		</div>   
+        </div>
+		<div class="perfil-usuario-footer">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Lendo</th>
+                        <th scope="col">Lido</th>
+                        <th scope="col">Lerei</th>
+                        <th scope="col">Desisti</th>                            
+                                <a role="button" class="botoes-perfil" asp-controller="BookSearch" asp-action="Editar">Editar</a>
+                                <a role="button" class="botoes-perfil" asp-controller="BookSearch" asp-action="Index">Adicionar</a>
+                      </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Dom Quixote</td>
+                        <td>Harry Potter</td>
+                        <td>O essencialismo</td>
+                        <td>A sutil arte de ligar o foda-se</td> 
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Crespusculo</td>
+                        <td>Amanhecer</td>
+                        <td>@Model.Desisti</td>
+                        <td>Dom Casmurro</td>
+                     </tr>
+            </tbody>
+		</table>
+    </div>
+</section>
+	
+   
+
+

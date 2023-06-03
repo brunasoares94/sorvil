@@ -1,0 +1,52 @@
+﻿@model Editar
+
+<div class="perfil-logotipo">
+    <img src="~/img/Sorvil2.png" alt="img-avatar" />
+</div>
+<div class="navegador-perfil">
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" asp-area="" asp-controller="BookSearch" asp-action="Index">Search</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" asp-area="" asp-controller="BookSearch" asp-action="Perfil">Home</a>
+        </li>
+    </ul>
+</div>
+    <br />
+    <br />
+<div class="texto-editar-lista">
+    <h1 class="texto-editar"> Edite sua lista: </h1>
+</div>
+<div class="formulario-lista">
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Nome/Autor</label>
+            <input type="text" class="form-control" id="Nome/Autor" aria-describedby="Nome/Autor">
+            <div id="emailHelp" class="form-text"></div>
+        </div>
+        <div class="mb-3">
+            <label for="QuantidadeDePaginas" class="form-label">Páginas lidas</label>
+            <input type="text" class="form-control" id="QuantidadeDePaginasLidas">
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Lido</label>
+            </div>
+                 <div class="mb-3 form-check">
+             <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Lendo</label>
+             </div>
+    <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Lerei</label>
+    </div>
+    <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Desisti</label>
+    </div>
+    <div class="botao-adicionar-editar">
+		<button type="submit" class="btn btn-primary">Adicionar</button>
+    </div>
+       <div class="imagem-editar">
+           <img src="~/img/editarlista.svg" />
+       </div>

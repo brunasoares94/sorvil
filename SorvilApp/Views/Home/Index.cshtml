@@ -1,0 +1,30 @@
+﻿@using Microsoft.AspNetCore.Identity
+@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="container">
+
+    <div class="logotipo">
+        <img src="~/img/Sorvil2.png" />
+    </div>
+
+    <div class="imagem-fundo">
+        <img src="~/img/paginainical.svg" />
+    </div>
+
+    <div class="texto-inicial">
+        <h1>
+            Para os amantes da literatura compartilharem opiniões, aicionarem livros à sua estante
+            <br />	e verificarem seus registros à qualquer momento!
+        </h1>
+    </div>
+
+    <div class="botao-cadastro">
+        <a class="btn btn-primary" type="button" asp-area="Identity" asp-page="/Account/Register">Cadastre-se aqui</a>
+    </div>
+  
+    <div class="botao-login">
+        <a class="btn btn-primary" type="button" asp-area="Identity" asp-page="/Account/Login">Login</a>
+    </div>
+</div>
+

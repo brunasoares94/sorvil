@@ -1,0 +1,45 @@
+﻿@model DetailsViewModel
+
+<div class="logotipo">
+	<img src="~/img/Sorvil2.png" />
+</div>
+<div class="navegador-perfil">
+	<ul class="nav justify-content-center">
+		<li class="nav-item">
+			<a class="nav-link active" aria-current="page" asp-area="" asp-controller="BookSearch" asp-action="Index">Search</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" asp-area="" asp-controller="BookSearch" asp-action="Perfil">Home</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" asp-area="Identity" asp-page="/Account/Logout">Logout</a>
+		</li>
+	</ul>
+</div>
+<<div class="detalhe-letras">
+	<h1>Caro leitor, Gostaria de acrescentá-lo à sua estante de livros?</h1>
+</div>
+
+<div class="book-card">
+	<p> Código do Livro: @Model.BookId </p>
+	<h3>@Model.Title</h3>
+	<p>@Model.Author</p>
+	<p>@Model.PublishedYear</p>
+	<p>@Model.Description</p>
+
+</div>
+
+<div class="row">
+    <div class="col-md-2">
+        <a asp-action="Editar" asp-controller="BookSearch" id="Lido" class="btn btn-primary d-block my-1">Lido</a>
+    </div>
+    <div class="col-md-2">
+		<a asp-action="Editar" asp-controller="BookSearch" id="Lendo" class="btn btn-primary d-block my-1">Lendo</a>
+    </div>
+    <div class="col-md-2">
+		<a asp-action="Editar" asp-controller="BookSearch" id="Lerei" class="btn btn-primary d-block my-1">Lerei</a>
+    </div>
+    <div class="col-md-2">
+		<a asp-controller="BookSearch" asp-action="Perfil" asp-route-Id="@Model." id="Lido" class="btn btn-primary d-block my-1">Desisti</a>
+    </div>
+</div>

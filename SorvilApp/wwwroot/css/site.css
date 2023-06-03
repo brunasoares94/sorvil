@@ -1,0 +1,376 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+
+* {
+    font-family: 'Chewy', cursive;
+}
+body{
+    margin: 0;
+    background-color: #201b2c;
+}
+
+.navbar{
+    font-family: 'Lobster', cursive;
+}
+
+.nav-item{ 
+    font-size: 35px;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center center;
+}
+
+.logotipo {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 10vw;
+    height: 10vh;
+}
+.imagem-fundo {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left center;
+    width: 100vw;
+    height: 100vh;
+    vertical-align: top;
+    padding-top: 50px;
+}
+
+.texto-inicial {
+    position: absolute;
+    bottom: 100px;
+    top: 10%;
+    left: 60%;
+    font-size: 100%;
+    text-shadow: -5px 0 rgb(108, 99, 255), 0 1px rgb(108, 99, 255), 1px 0 rgb(108, 99, 255), 0 -1px rgb(108, 99, 255);
+    color: white;
+    font-family: 'Lobster', cursive;
+}
+
+.btn {
+    font-size: 40px;
+    border: none;
+    background-color: rgb(108, 99, 255);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn-primary {
+    border-radius: 30px;
+    border: 3px solid #02bfd2;
+    color: black;
+    overflow: hidden;
+}
+
+.botao-cadastro {
+    position: absolute;
+    bottom: 150px;
+    top: 40%;
+    left: 70%;
+    width: 20vw;
+    height: 50vh;
+}
+
+.formulario {
+    width: 80%;
+    height: 100vh;
+     display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.login-image {
+    position: absolute;
+    top: 32%;
+    left: 60%;
+    width: 0vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    background-color: #fde3a7d7;
+    padding: 1rem;
+}
+
+.login-image img{
+    width: 40rem;
+}
+
+.faca-login {
+    position: absolute;
+    bottom: 100px;
+    top: 20%;
+    left: 35%;
+    font-size: 300px;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    color: rgb(108, 99, 255);
+}
+
+.botao-registro {
+    position: absolute;
+    bottom: 100px;
+    top: 170%;
+    left: 10%;
+    font-size: 25px;
+}
+
+.botao-registro button {
+   border: none;
+  background-color: rgb(108, 99, 255);
+   padding: 0.8rem 1rem;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+#account {
+    position: absolute;
+    top: 50px;
+    right: 100px;
+    bottom: 200px;
+    left: 10px;
+    width: 360px;
+    height: 150px;
+    margin: auto;
+    box-shadow: 0px 0px 10px black;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.final-login {
+    position: absolute;
+    bottom: 100px;
+    top: 80%;
+    left: 150%;
+    font-size: 20px;
+    color: rgb(108, 99, 255);
+}
+
+.botao-cadastrese {
+    position: absolute;
+    bottom: 100px;
+    top: 57%;
+    left: 10%;
+    font-size: 25px;
+}
+
+.botao-cadastrese button{
+  border: none;
+  background-color: rgb(108, 99, 255);
+  padding: 0.8rem 1rem;
+  border-radius: 5px;
+}
+
+.register-image{
+    position: absolute;
+    top: 42%;
+    left: 80%;
+    width: 0vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+    padding: 1rem;
+}
+
+ .register-image img {
+        width: 40rem;
+    }
+
+.botao-pesquisar {
+    color: black;
+    position: absolute;
+    bottom: 350px;
+    top: 40%;
+    left: 55%;
+    width: 20vw;
+    height: 20vh;
+    font-size: 30px;
+}
+.search-buttons{
+    display: flex;
+}
+.botao-pesquisar button {
+    border: none;
+    background-color: rgb(108, 99, 255);
+    padding: 0.8rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.formulario-search{
+    width: 300vw;
+    height: 500vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center center;
+}
+
+.resultado {
+    position: absolute;
+    bottom: 850px;
+    top: 09%;
+    left: 55%;
+    width: 20vw;
+    height: 20vh;
+    font-size: 30px;
+    color: rgb(108, 99, 255);
+}
+
+.container-resultados {
+    display: flex;
+    flex-direction: row;
+    justify-content: center center;
+}
+
+
+.botao-login {
+    font-size: 100px;
+    position: absolute;
+    bottom: 100px;
+    top: 0%;
+    left: 25%;
+}
+
+.perfil-logotipo {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 20vw;
+    height: 10vh;
+
+}
+
+
+.seccion-perfil-usuario .perfil-usuario-body,.seccion-perfil-usuario
+{
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+}
+
+.seccion-perfil-usuario .perfil-usuario-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(#B873FF, transparent);
+    margin-bottom: 1.52rem;
+}
+
+.seccion-perfil-usuario .perfil-usuario-portada {
+        display: block;
+        position: relative;
+        width: 90%;
+        height: 17rem;
+        background: linear-gradient(45deg, #BC3CFF, #317FFF);
+        border-radius: 0 0 20px 20px;
+    }
+
+.seccion-perfil-usuario .perfil-usuario-avatar{
+    display: flex;
+    width: 180px;
+    height: 180px;
+    align-items: center;
+    justify-content: center;
+    border: 7px solid #FFFFFF;
+    background-color: #DFE5F2;
+    border-radius: 50%;
+    box-shadow: 0 0 12px rgba(0, 0, 0, .2);
+    position: absolute;
+    bottom: -40px;
+    left: calc(50% - 90px);
+    z-index: 1;
+    overflow: hidden;
+    position: relative;
+}
+
+.seccion-perfil-usuario .perfil-usuario-avatar img {
+    width: 100%;
+    position: relative;
+    border-radius: 50%;
+
+}
+
+.seccion-perfil-usuario .perfil-usuario-avatar .botao-avatar{
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 0;
+    background-color: #fff;
+    box-shadow: 0 0 12px rgba(0, 0, 0, .2);
+}
+.seccion-perfil-usuario .perfil-usuario-body{
+    width:  75%;
+}
+
+.seccion-perfil-usuario .perfil-usuario-body .titulo{
+    display: block;
+    width: 100%;
+    font-size: 5rem;
+    margin-bottom: 0.5rem;
+}
+
+.seccion-perfil-usuario .perfil-usuario-body .texto{
+    color: #848484;
+    font-size: 2em;
+}
+.seccion-perfil-usuario .perfil-usuario-footer,
+.seccion-perfil-usuario .perfil-usuario-bio{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 0 12px rgba(0, 0, 0, .2);
+    background-color: #fff;
+    border-radius: 15px;
+    width: 100%;
+}
+
+.seccion-perfil-usuario perfil-usuario-bio{
+    margin-bottom: 1.25rem;
+    text-align: center;
+}
+
+.seccion-perfil-usuario .lista-dados {
+    width: 50%;
+    list-style: none;
+}
+
+.seccion-perfil-usuario .lista-dados li {
+    padding: 10px 0;
+}
+
+.seccion-perfil-usuario .lista-dados li > .icono{
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    vertical-align: middle;
+}
+
+.formulario-lista {
+    color: rgb(108, 99, 255);
+    display: block;
+    width: 100vh;
+    height: 10vh;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.texto-editar{
+    color: aliceblue;
+}
+
+.botao-cadastrar{
+    font-size: 30px;
+}
+
+.detalhe-letras{
+    color: aliceblue;
+}
+
+.book-card {
+    color: rgb(108, 99, 255);
+    font-size: 30px;
+}
+
